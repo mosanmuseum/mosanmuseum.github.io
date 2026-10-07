@@ -1,41 +1,46 @@
 <!doctype html>
-<html lang="ko"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#ffffff">
-<title>노대식 | Constructed Form : 구축된 형태</title>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>노대식 | Constructed Form</title>
 <style>
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:#fff;color:#171717}
-body{font-family:Arial,"Noto Sans KR",sans-serif}
-a{color:inherit}
-.site{width:min(100%,760px);margin:0 auto;padding:34px 22px 60px}
-.museum{text-align:center;font-size:10px;letter-spacing:.24em;color:#777;margin:2px 0 34px;text-transform:uppercase}
-.section{padding:0 0 58px;margin:0 0 58px;border-bottom:1px solid #e6e6e6}
-.section:last-child{border-bottom:0;margin-bottom:0}
-.artwork{width:100%;height:auto;display:block;margin:0 auto 24px}
-.artist{font-size:13px;letter-spacing:.12em;margin:0 0 7px}
-.title{font-size:25px;font-weight:400;letter-spacing:-.02em;margin:0 0 28px}
-.sound-label{font-size:10px;letter-spacing:.22em;color:#777;margin:0 0 10px;text-transform:uppercase}
-audio{display:block;width:100%;height:42px}
-.credit{font-size:10px;color:#888;margin-top:12px;letter-spacing:.04em}
-.intro{text-align:center;margin:-8px 0 38px;color:#888;font-size:11px;letter-spacing:.08em}
-.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 36px}
-.nav a{font-size:10px;text-decoration:none;border:1px solid #ddd;padding:7px 10px;color:#555}
-.footer{text-align:center;font-size:9px;letter-spacing:.14em;color:#aaa;margin-top:36px}
-@media(max-width:520px){
-  .site{padding:24px 16px 44px}
-  .title{font-size:23px}
-}
-</style></head>
-<body><main class="site">
+body{margin:0;background:#fff;color:#171717;font-family:Arial,"Noto Sans KR",sans-serif}
+main{max-width:760px;margin:auto;padding:38px 24px 60px}
+.museum{font-size:10px;letter-spacing:.22em;color:#777;text-align:center;margin-bottom:42px}
+.artwork{width:100%;display:block;margin:0 auto 34px}
+.artist{font-size:14px;letter-spacing:.08em;margin-bottom:7px}
+.title{font-size:22px;font-weight:400;margin:0 0 4px}
+.subtitle{font-size:11px;color:#888;letter-spacing:.04em;margin-bottom:42px}
+.section{font-size:10px;letter-spacing:.2em;color:#777;margin-bottom:18px}
+.sound{border-top:1px solid #ddd;padding:18px 0 22px}
+.sound-title{font-size:13px;margin-bottom:10px}
+audio{width:100%}
+</style>
+</head>
+<body>
+<main>
 <div class="museum">MOSAN CONTEMPORARY ART MUSEUM</div>
-<section class="section">
-<img class="artwork" src="noh-dae-sik.jpg" alt="노대식 작품 이미지">
-<p class="artist">노대식</p>
-<h1 class="title">Constructed Form : 구축된 형태</h1>
-<div class="sound-label">Exhibition Sound</div>
-<audio controls preload="metadata"><source src="noh-dae-sik.mp3" type="audio/mpeg">브라우저에서 오디오 재생을 지원하지 않습니다.</audio>
-<div class="credit">Weightless Drift</div>
-</section>
-<div class="footer">MOSAN CONTEMPORARY ART MUSEUM</div>
-</main></body></html>
+<img class="artwork" src="noh-dae-sik.jpg" alt="노대식 작품">
+<div class="artist">노대식</div>
+<h1 class="title">구축된 형태</h1>
+<div class="subtitle">Constructed Form</div>
+<div class="section">EXHIBITION SOUND</div>
+
+<div class="sound">
+  <div class="sound-title">Weightless Drift</div>
+  <audio controls preload="none">
+    <source src="noh-dae-sik.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<div class="sound">
+  <div class="sound-title">B : 형태</div>
+  <audio controls preload="none">
+    <source src="noh-dae-sik-2.mp3" type="audio/mpeg">
+  </audio>
+</div>
+</main>
+</body>
+</html>
